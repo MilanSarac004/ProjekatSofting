@@ -16,5 +16,12 @@ namespace Projekat
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Users u = new Users();
+            u.Show();
+            this.Hide();
+        }
     }
 }
