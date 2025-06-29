@@ -28,33 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutProizvodi = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // flowLayoutProizvodi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(346, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ti si obican smrtnik";
+            this.flowLayoutProizvodi.AutoScroll = true;
+            this.flowLayoutProizvodi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutProizvodi.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutProizvodi.Name = "flowLayoutProizvodi";
+            this.flowLayoutProizvodi.Size = new System.Drawing.Size(1074, 586);
+            this.flowLayoutProizvodi.TabIndex = 0;
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(361, 605);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(115, 44);
+            this.btnOrder.TabIndex = 0;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1074, 661);
+            this.Controls.Add(this.btnOrder);
+            this.Controls.Add(this.flowLayoutProizvodi);
             this.Name = "Shop";
             this.Text = "Shop";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutProizvodi;
+        private System.Windows.Forms.Button btnOrder;
     }
 }
