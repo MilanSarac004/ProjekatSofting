@@ -35,11 +35,6 @@ namespace Projekat
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             try
@@ -55,6 +50,18 @@ namespace Projekat
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("User Deleted!", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    idTB.Clear();
+                    imeTB.Clear();
+                    prezimeTB.Clear();
+                    emailTB.Clear();
+                    passTB.Clear();
+                    telefonTB.Clear();
+                    adresaTB.Clear();
+                    drzavaTB.Clear();
+                    adminCB.Checked = false;
+                    gradTB.Clear();
+                    idTB.Enabled = true;
 
                     LoadUsers();
                 }
@@ -97,10 +104,6 @@ namespace Projekat
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
         private void Users_Load(object sender, EventArgs e)
         {
             LoadUsers();
@@ -141,6 +144,13 @@ namespace Projekat
             gradTB.Clear();
             idTB.Enabled = true;
             dataGridView1.ClearSelection();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AdminPage a = new AdminPage();
+            a.Show();
+            this.Hide();
         }
     }
 }

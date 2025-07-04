@@ -9,7 +9,7 @@ namespace Projekat
 {
     public static class Database
     {
-        public static string connectionString = "Server=DESKTOP-3ELM7OD\\SQLEXPRESS;Database=prodaja_muzicke_opreme;Trusted_Connection=True;";
+        public static string connectionString = "Server=DESKTOP-QVCAJUN\\SQLEXPRESS;Database=prodaja_muzicke_opreme;Trusted_Connection=True;";
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);

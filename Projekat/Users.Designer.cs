@@ -52,13 +52,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.adminCB = new System.Windows.Forms.CheckBox();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(527, 545);
+            this.btnDelete.Location = new System.Drawing.Point(440, 543);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 41);
             this.btnDelete.TabIndex = 3;
@@ -69,7 +70,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(356, 545);
+            this.btnUpdate.Location = new System.Drawing.Point(274, 543);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(108, 41);
             this.btnUpdate.TabIndex = 4;
@@ -85,7 +86,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(841, 358);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idTB
             // 
@@ -168,7 +168,6 @@
             this.label1.Size = new System.Drawing.Size(30, 23);
             this.label1.TabIndex = 16;
             this.label1.Text = "ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -273,7 +272,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(684, 545);
+            this.btnReset.Location = new System.Drawing.Point(597, 543);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(108, 41);
             this.btnReset.TabIndex = 27;
@@ -281,11 +280,23 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(756, 543);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(108, 41);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 607);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.adminCB);
             this.Controls.Add(this.label10);
@@ -345,5 +356,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.CheckBox adminCB;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnBack;
     }
 }

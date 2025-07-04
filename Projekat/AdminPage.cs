@@ -30,5 +30,12 @@ namespace Projekat
             p.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Orders o = new Orders();
+            o.Show();
+            this.Hide();
+        }
     }
 }

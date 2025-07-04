@@ -66,5 +66,12 @@ namespace Projekat
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register r = new Register();
+            r.Show();
+            this.Hide();
+        }
     }
 }
