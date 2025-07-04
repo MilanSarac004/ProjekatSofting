@@ -33,15 +33,37 @@ namespace Projekat
                 using (SqlConnection conn = Database.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT is_admin FROM korisnici WHERE email=@email AND lozinka=@lozinka";
+                    string query = "SELECT korisnik_id, is_admin FROM korisnici WHERE email=@email AND lozinka=@lozinka";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@email", email);
                     cmd.Parameters.AddWithValue("@lozinka", password);
 
                     SqlDataReader reader = cmd.ExecuteReader();
+
                     if (reader.Read())
                     {
-                        bool isAdmin = reader.GetBoolean(0);
+                        int korisnikId = 0;
+                        bool isAdmin = false;
+
+                        int korisnikIdIndex = reader.GetOrdinal("korisnik_id");
+                        int isAdminIndex = reader.GetOrdinal("is_admin");
+
+                        if (!reader.IsDBNull(korisnikIdIndex))
+                            korisnikId = reader.GetInt32(korisnikIdIndex);
+                        else
+                        {
+                            MessageBox.Show("Korisnik ID je NULL u bazi. Ne može se nastaviti.");
+                            return;
+                        }
+
+                        if (!reader.IsDBNull(isAdminIndex))
+                            isAdmin = reader.GetBoolean(isAdminIndex);
+                        else
+                        {
+                            MessageBox.Show("is_admin vrednost je NULL u bazi. Ne može se nastaviti.");
+                            return;
+                        }
+
                         this.Hide();
 
                         if (isAdmin)
@@ -51,19 +73,19 @@ namespace Projekat
                         }
                         else
                         {
-                            Shop shop = new Shop();
+                            Shop shop = new Shop(korisnikId);
                             shop.Show();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Wrong email or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Pogrešan email ili lozinka!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Greška pri logovanju: " + ex.Message);
             }
         }
 
