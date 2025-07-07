@@ -12,6 +12,7 @@ namespace Projekat
         public string Naziv { get; set; }
         public decimal Cena { get; set; }
         public int Kolicina { get; set; }
+
         public decimal Ukupno => Cena * Kolicina;
     }
 }

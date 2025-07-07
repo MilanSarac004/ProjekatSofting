@@ -40,7 +40,7 @@
             // 
             this.lblNaziv.AutoSize = true;
             this.lblNaziv.Font = new System.Drawing.Font("Noto Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaziv.Location = new System.Drawing.Point(91, 11);
+            this.lblNaziv.Location = new System.Drawing.Point(33, 17);
             this.lblNaziv.Name = "lblNaziv";
             this.lblNaziv.Size = new System.Drawing.Size(86, 36);
             this.lblNaziv.TabIndex = 0;
@@ -48,19 +48,19 @@
             // 
             // lblOpis
             // 
-            this.lblOpis.AutoSize = true;
             this.lblOpis.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOpis.Location = new System.Drawing.Point(107, 207);
+            this.lblOpis.Location = new System.Drawing.Point(243, 68);
             this.lblOpis.Name = "lblOpis";
-            this.lblOpis.Size = new System.Drawing.Size(52, 23);
+            this.lblOpis.Size = new System.Drawing.Size(375, 134);
             this.lblOpis.TabIndex = 1;
             this.lblOpis.Text = "label1";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(51, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 148);
+            this.pictureBox1.Size = new System.Drawing.Size(195, 185);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -68,7 +68,8 @@
             // 
             this.lblCena.AutoSize = true;
             this.lblCena.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCena.Location = new System.Drawing.Point(94, 230);
+            this.lblCena.ForeColor = System.Drawing.Color.Red;
+            this.lblCena.Location = new System.Drawing.Point(271, 222);
             this.lblCena.Name = "lblCena";
             this.lblCena.Size = new System.Drawing.Size(77, 32);
             this.lblCena.TabIndex = 3;
@@ -76,12 +77,12 @@
             // 
             // btnAddToCart
             // 
-            this.btnAddToCart.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToCart.Location = new System.Drawing.Point(96, 265);
+            this.btnAddToCart.Font = new System.Drawing.Font("Noto Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToCart.Location = new System.Drawing.Point(456, 220);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnAddToCart.Size = new System.Drawing.Size(162, 39);
             this.btnAddToCart.TabIndex = 4;
-            this.btnAddToCart.Text = "button1";
+            this.btnAddToCart.Text = "Add to Cart";
             this.btnAddToCart.UseVisualStyleBackColor = true;
             this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click_1);
             // 
@@ -95,7 +96,7 @@
             this.Controls.Add(this.lblOpis);
             this.Controls.Add(this.lblNaziv);
             this.Name = "ProductItem";
-            this.Size = new System.Drawing.Size(269, 298);
+            this.Size = new System.Drawing.Size(647, 298);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
