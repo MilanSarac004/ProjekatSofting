@@ -143,5 +143,12 @@ namespace Projekat
             txtKategorija.Clear();
             txtProizvodID.Enabled = true;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AdminPage a = new AdminPage();
+            a.Show();
+            this.Hide();
+        }
     }
 }

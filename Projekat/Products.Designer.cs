@@ -45,6 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,7 +109,7 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(276, 573);
+            this.btnInsert.Location = new System.Drawing.Point(183, 576);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(114, 47);
             this.btnInsert.TabIndex = 2;
@@ -119,7 +120,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(432, 573);
+            this.btnUpdate.Location = new System.Drawing.Point(339, 576);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(114, 47);
             this.btnUpdate.TabIndex = 2;
@@ -130,7 +131,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(571, 573);
+            this.btnDelete.Location = new System.Drawing.Point(478, 576);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(114, 47);
             this.btnDelete.TabIndex = 2;
@@ -201,7 +202,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(714, 573);
+            this.btnReset.Location = new System.Drawing.Point(621, 576);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(114, 47);
             this.btnReset.TabIndex = 2;
@@ -209,11 +210,23 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(759, 576);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(114, 47);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "BACK";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 648);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -259,5 +272,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnBack;
     }
 }
