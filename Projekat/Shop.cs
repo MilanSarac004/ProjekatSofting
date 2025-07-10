@@ -223,5 +223,15 @@ namespace Projekat
             f1.Show();
             this.Hide();
         }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            CartForm cf = new CartForm(cartItems);
+            cf.OnCartUpdated += (updatedCart) =>
+            {
+                cartItems = updatedCart;
+            };
+            cf.ShowDialog();
+        }
     }
 }

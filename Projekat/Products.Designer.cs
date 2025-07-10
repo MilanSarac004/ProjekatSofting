@@ -69,7 +69,7 @@
             // txtNaziv
             // 
             this.txtNaziv.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNaziv.Location = new System.Drawing.Point(229, 522);
+            this.txtNaziv.Location = new System.Drawing.Point(214, 522);
             this.txtNaziv.Name = "txtNaziv";
             this.txtNaziv.Size = new System.Drawing.Size(121, 28);
             this.txtNaziv.TabIndex = 1;
@@ -77,7 +77,7 @@
             // txtOpis
             // 
             this.txtOpis.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOpis.Location = new System.Drawing.Point(386, 522);
+            this.txtOpis.Location = new System.Drawing.Point(371, 522);
             this.txtOpis.Name = "txtOpis";
             this.txtOpis.Size = new System.Drawing.Size(121, 28);
             this.txtOpis.TabIndex = 1;
@@ -85,7 +85,7 @@
             // txtCena
             // 
             this.txtCena.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCena.Location = new System.Drawing.Point(552, 522);
+            this.txtCena.Location = new System.Drawing.Point(537, 522);
             this.txtCena.Name = "txtCena";
             this.txtCena.Size = new System.Drawing.Size(121, 28);
             this.txtCena.TabIndex = 1;
@@ -93,7 +93,7 @@
             // txtKolicina
             // 
             this.txtKolicina.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKolicina.Location = new System.Drawing.Point(728, 522);
+            this.txtKolicina.Location = new System.Drawing.Point(713, 522);
             this.txtKolicina.Name = "txtKolicina";
             this.txtKolicina.Size = new System.Drawing.Size(121, 28);
             this.txtKolicina.TabIndex = 1;
@@ -101,7 +101,7 @@
             // txtKategorija
             // 
             this.txtKategorija.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKategorija.Location = new System.Drawing.Point(890, 522);
+            this.txtKategorija.Location = new System.Drawing.Point(875, 522);
             this.txtKategorija.Name = "txtKategorija";
             this.txtKategorija.Size = new System.Drawing.Size(121, 28);
             this.txtKategorija.TabIndex = 1;
@@ -109,7 +109,8 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(183, 576);
+            this.btnInsert.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btnInsert.Location = new System.Drawing.Point(861, 576);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(114, 47);
             this.btnInsert.TabIndex = 2;
@@ -120,7 +121,8 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(339, 576);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Turquoise;
+            this.btnUpdate.Location = new System.Drawing.Point(719, 576);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(114, 47);
             this.btnUpdate.TabIndex = 2;
@@ -131,7 +133,8 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(478, 576);
+            this.btnDelete.ForeColor = System.Drawing.Color.Red;
+            this.btnDelete.Location = new System.Drawing.Point(580, 576);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(114, 47);
             this.btnDelete.TabIndex = 2;
@@ -142,67 +145,67 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(57, 496);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 23);
+            this.label1.Size = new System.Drawing.Size(27, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(225, 496);
+            this.label2.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(210, 496);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 23);
+            this.label2.Size = new System.Drawing.Size(55, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(382, 496);
+            this.label3.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(367, 496);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 23);
+            this.label3.Size = new System.Drawing.Size(96, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Description";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(548, 496);
+            this.label4.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(533, 496);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 23);
+            this.label4.Size = new System.Drawing.Size(47, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Price";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(724, 496);
+            this.label5.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(709, 496);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 23);
+            this.label5.Size = new System.Drawing.Size(68, 23);
             this.label5.TabIndex = 3;
             this.label5.Text = "Kolicina";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(886, 496);
+            this.label6.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(871, 496);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 23);
+            this.label6.Size = new System.Drawing.Size(87, 23);
             this.label6.TabIndex = 3;
             this.label6.Text = "Kategorija";
             // 
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(621, 576);
+            this.btnReset.Location = new System.Drawing.Point(433, 576);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(114, 47);
             this.btnReset.TabIndex = 2;
@@ -213,7 +216,8 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(759, 576);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnBack.Location = new System.Drawing.Point(68, 576);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(114, 47);
             this.btnBack.TabIndex = 4;

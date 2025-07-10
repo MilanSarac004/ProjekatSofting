@@ -66,8 +66,8 @@
             // 
             // btnArchive
             // 
-            this.btnArchive.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArchive.Location = new System.Drawing.Point(105, 521);
+            this.btnArchive.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArchive.Location = new System.Drawing.Point(589, 521);
             this.btnArchive.Name = "btnArchive";
             this.btnArchive.Size = new System.Drawing.Size(108, 41);
             this.btnArchive.TabIndex = 5;
@@ -77,8 +77,9 @@
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(354, 521);
+            this.btnBack.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnBack.Location = new System.Drawing.Point(115, 521);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(108, 41);
             this.btnBack.TabIndex = 7;
@@ -129,10 +130,11 @@
             // 
             // btnClose
             // 
-            this.btnClose.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(123, 585);
+            this.btnClose.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Red;
+            this.btnClose.Location = new System.Drawing.Point(124, 568);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(118, 41);
+            this.btnClose.Size = new System.Drawing.Size(118, 58);
             this.btnClose.TabIndex = 33;
             this.btnClose.Text = "Close Details";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -140,7 +142,7 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.Location = new System.Drawing.Point(209, 521);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(118, 41);
@@ -151,7 +153,7 @@
             // 
             // btnChangeStatus
             // 
-            this.btnChangeStatus.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeStatus.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeStatus.Location = new System.Drawing.Point(22, 521);
             this.btnChangeStatus.Name = "btnChangeStatus";
             this.btnChangeStatus.Size = new System.Drawing.Size(135, 41);
@@ -213,71 +215,72 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Location = new System.Drawing.Point(14, 230);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(56, 23);
+            this.lblStatus.Size = new System.Drawing.Size(63, 23);
             this.lblStatus.TabIndex = 24;
             this.lblStatus.Text = "Status:";
             // 
             // lblCena
             // 
             this.lblCena.AutoSize = true;
-            this.lblCena.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCena.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCena.Location = new System.Drawing.Point(14, 180);
             this.lblCena.Name = "lblCena";
-            this.lblCena.Size = new System.Drawing.Size(104, 23);
+            this.lblCena.Size = new System.Drawing.Size(112, 23);
             this.lblCena.TabIndex = 23;
             this.lblCena.Text = "Ukupna cena:";
             // 
             // lblAdresa
             // 
             this.lblAdresa.AutoSize = true;
-            this.lblAdresa.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdresa.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdresa.Location = new System.Drawing.Point(14, 133);
             this.lblAdresa.Name = "lblAdresa";
-            this.lblAdresa.Size = new System.Drawing.Size(126, 23);
+            this.lblAdresa.Size = new System.Drawing.Size(135, 23);
             this.lblAdresa.TabIndex = 22;
             this.lblAdresa.Text = "Adresa isporuke:";
             // 
             // lblDatum
             // 
             this.lblDatum.AutoSize = true;
-            this.lblDatum.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatum.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatum.Location = new System.Drawing.Point(14, 92);
             this.lblDatum.Name = "lblDatum";
-            this.lblDatum.Size = new System.Drawing.Size(143, 23);
+            this.lblDatum.Size = new System.Drawing.Size(154, 23);
             this.lblDatum.TabIndex = 21;
             this.lblDatum.Text = "Datum narudzbine:";
             // 
             // lblKupac
             // 
             this.lblKupac.AutoSize = true;
-            this.lblKupac.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKupac.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKupac.Location = new System.Drawing.Point(14, 49);
             this.lblKupac.Name = "lblKupac";
-            this.lblKupac.Size = new System.Drawing.Size(56, 23);
+            this.lblKupac.Size = new System.Drawing.Size(60, 23);
             this.lblKupac.TabIndex = 20;
             this.lblKupac.Text = "Kupac:";
             // 
             // lblNarudzbina
             // 
             this.lblNarudzbina.AutoSize = true;
-            this.lblNarudzbina.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNarudzbina.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNarudzbina.Location = new System.Drawing.Point(14, 9);
             this.lblNarudzbina.Name = "lblNarudzbina";
-            this.lblNarudzbina.Size = new System.Drawing.Size(114, 23);
+            this.lblNarudzbina.Size = new System.Drawing.Size(121, 23);
             this.lblNarudzbina.TabIndex = 19;
             this.lblNarudzbina.Text = "Narudzbina ID:";
             // 
             // btnOpenArch
             // 
-            this.btnOpenArch.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenArch.Location = new System.Drawing.Point(603, 521);
+            this.btnOpenArch.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenArch.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnOpenArch.Location = new System.Drawing.Point(418, 521);
             this.btnOpenArch.Name = "btnOpenArch";
             this.btnOpenArch.Size = new System.Drawing.Size(131, 41);
             this.btnOpenArch.TabIndex = 9;
-            this.btnOpenArch.Text = "Open archive";
+            this.btnOpenArch.Text = "Open Archive";
             this.btnOpenArch.UseVisualStyleBackColor = true;
             this.btnOpenArch.Click += new System.EventHandler(this.btnOpenArch_Click);
             // 
