@@ -13,6 +13,11 @@ namespace Projekat
     {
         private List<CartItem> cartItems = new List<CartItem>();
         private int korisnikId;
+        private string korisnikIme = "";
+        private string korisnikPrezime = "";
+        private string korisnikAdresa = "";
+        private string korisnikTelefon = "";
+
 
         public Shop(int korisnikId)
         {
@@ -58,6 +63,28 @@ namespace Projekat
                     };
 
                     flowLayoutProizvodi.Controls.Add(item);
+                }
+            }
+        }
+
+        private void LoadKorisnikInfo()
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT ime, prezime, adresa, telefon FROM korisnici WHERE korisnik_id = @id";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", korisnikId);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        korisnikIme = reader.IsDBNull(0) ? "" : reader.GetString(0);
+                        korisnikPrezime = reader.IsDBNull(1) ? "" : reader.GetString(1);
+                        korisnikAdresa = reader.IsDBNull(2) ? "" : reader.GetString(2);
+                        korisnikTelefon = reader.IsDBNull(3) ? "" : reader.GetString(3);
+                    }
                 }
             }
         }
@@ -129,6 +156,7 @@ namespace Projekat
                 }
             }
 
+            LoadKorisnikInfo();
             GeneratePDFReceipt(cartItems, ukupnaCena);
             MessageBox.Show("Order Successfull! Bill generated.", "Thank You!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             cartItems.Clear();
@@ -160,6 +188,11 @@ namespace Projekat
                 title.Alignment = Element.ALIGN_CENTER;
                 document.Add(title);
                 document.Add(new Paragraph("\n\n"));
+
+                document.Add(new Paragraph($"Kupac: {korisnikIme} {korisnikPrezime}", fontNormal));
+                document.Add(new Paragraph($"Adresa: {korisnikAdresa}", fontNormal));
+                document.Add(new Paragraph($"Telefon: {korisnikTelefon}", fontNormal));
+                document.Add(new Paragraph("\n"));
 
                 document.Add(new Paragraph($"Datum izdavanja: {DateTime.Now.ToString("dd.MM.yyyy HH:mm")}", fontNormal));
                 document.Add(new Paragraph("Status: U obradi", fontNormal));
